@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+/* body of the form*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #00e68a;
+}
+/* container for the page*/
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    margin-right: auto;
+    margin-left: auto;
+}
+/* for contact sextion form */
+.contact-section{
+    background-color:white;
+    padding: 40px 0;
+}
+/* contact us title */
+.contact-section h1{
+    text-align: center;
+    color: black;
+}
+/* dash line under contact title*/
+.border{
+    width: 200px;
+    height: 5px;
+    background: black;
+    margin: 10px auto;
+}
+ 
+/* size of the form */
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+/* used for textfields */  
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background:White;
+    border: 1px solid#000000;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+}
+.contact-form .error {
+    color: #ff0000;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 130px;
+}
+/* button styling*/
+.contact-form-btn{
+    float: center;
+    border: 0;
+    background: #00e68a;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* submit button hoevers*/
+.contact-form-btn:hover{
+    background: black;
+}

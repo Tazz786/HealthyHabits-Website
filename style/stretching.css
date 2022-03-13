@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    padding: 5px 10px;
+}
+.head1 {
+    font-size:40px;
+    color: #00e68a;
+    font-weight: 500;
+    text-align: center;
+    text-shadow:2px 2px 4px black;
+    font-family: 'Poppins',sans-serif;
+    padding: 15px 20px;
+}
+
+/* body of the page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Main Body or main section */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+  
+/* used for image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* used when the screen is less than 700px */
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+}
+  
+/* used when the screen is less than 400px */
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+}

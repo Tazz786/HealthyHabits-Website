@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <!-- Contact us Page-->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          
+        <!-- title -->
+        <title>Contact us Form</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <!-- external Css and jqeury files -->
+        <link rel="stylesheet" type="text/css" href="style/contactform.css"/>
+
+        <!-- Includes the plugin for validation -->
+        <script src="plugins/jquery.validate.js"></script>
+
+        <!-- Javascript file for form validation-->
+        <script src="scripts/contactform-validation.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="contact-section">
+                <h1>Contact Us</h1>
+                <div class="border"></div>
+
+                <!-- form -->
+                <form class="contact-form" name="contact form" method="post" action="mailto:LIFE@localcouncil.com" enctype="text/plain">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" class="contact-form-text" name="fullname" id="fullname" pattern="^(?=^.{0,40}$)^[a-zA-Z-]+\s[a-zA-Z-]+$" placeholder="Chris Brown" />
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" class="contact-form-text" name="email" id="email" placeholder="chris@brown.com"/>
+                    <br>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="contact-form-text" name="phone" id="phone" placeholder="+61 04x xxx xxx" 
+                    pattern="^(\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$"/>
+                    <br>
+                    <label for="enquiry">Message</label>
+                    <textarea class="contact-form-text" required placeholder="Write your message here... " reqruired></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" class="contact-form-btn" value="Submit">
+                    <input type="reset"  class="contact-form-btn" value="Reset">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
